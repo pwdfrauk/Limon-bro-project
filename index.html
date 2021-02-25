@@ -40,12 +40,13 @@
 <body>
 
     <!-- Preloader -->
-    <div class="preloader">
+  <div class="preloader">
         <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
-    </div><!--/Preloader -->
+    </div> 
+    <!--/Preloader -->
 
     <!--Header Area-->
-    <header class="header-area" style="background: #000080;">
+    <header class="header-area" style="background: /*#000080*/ #0A023A;">
         <nav class="navbar navbar-expand-lg main-menu">
             <div class="container-fluid">
 
@@ -54,29 +55,9 @@
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="menu-toggle"></span>
                 </button>
-
                 <div class="collapse navbar-collapse faruk-nav-bar" id="navbarSupportedContent">
                     <ul class="navbar-nav m-auto ">
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="index.html">Home</a> </li>
-                        <li class="nav-item"><a class="nav-link text-white" href="how-it-works.html">How it works</a></li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item text-white" href="about.html">About</a></li>
-                                <li><a class="dropdown-item text-white" href="packages.html">All Packages</a></li>
-                                <li><a class="dropdown-item text-white" href="faq.html">FAQ page</a></li>
-                                <li><a class="dropdown-item text-white" href="testimonials.html">Success Stories</a></li>
-                                <li><a class="dropdown-item text-white" href="affiliate.html">Affiliate</a></li>
-                                <li><a class="dropdown-item text-white" href="404.html">Error page</a></li>
-                                <li><a class="dropdown-item text-white" href="privacy.html">Privacy Policy</a></li>
-                                <li><a class="dropdown-item text-white" href="tos.html">Terms and Services</a></li>
-                                <li><a class="dropdown-item text-white" href="login.html">Login</a></li>
-                                <li><a class="dropdown-item text-white" href="register.html">Registration</a></li>
-                                <li><a class="dropdown-item text-white" href="forget-password.html">Forget Password</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
+                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dashboard</a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item text-white" href="dashboard.html">Dashboard</a></li>
@@ -93,14 +74,12 @@
                                 <li><a class="dropdown-item text-white" href="fees.html">Transaction fees</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-white" href="blog.html" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">News</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item text-white" href="blog.html">All News</a></li>
-                                <li><a class="dropdown-item text-white" href="blog-details.html">Single News</a></li>
-                            </ul>
-                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="index.html">Home</a> </li>
+                        <li class="nav-item"><a class="nav-link text-white" href="about.html">About Us</a></li>
                         <li class="nav-item"><a class="nav-link text-white" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="login.html">Login</a></li>
+                        <li><a class="nav-link text-white" href="singup.html">SingUp</a></li>
                     </ul>
                     <div class="header-btn justify-content-end">
                         <a href="login.html" class="bttn-small text-white faruk-button-gradient">Account Login</a>
@@ -109,9 +88,199 @@
             </div>
         </nav>
     </header><!--/Header Area-->
+    <!-- step area  -->
+    <section class="step-progress-section">
+      <div class="container"> 
+      
+      <!-- Steps Progress bar -->
+      <div class="row pt-5  mb-4">
+        <div class="col-lg-11 mx-auto">
+          <div class="row widget-steps">
+            <div class="col-4 step active">
+              <div class="step-name text-white"><b>Country</b></div>
+              <div class="progress">
+                <div class="progress-bar"></div>
+              </div>
+              <a href="#" class="step-dot"></a> </div>
+            <div class="col-4 step disabled">
+              <div class="step-name text-white"><b>Currency</b></div>
+              <div class="progress">
+                <div class="progress-bar"></div>
+              </div>
+              <a href="#" class="step-dot"></a> </div>
+            <div class="col-4 step disabled">
+              <div class="step-name text-white"><b>Success</b></div>
+              <div class="progress">
+                <div class="progress-bar"></div>
+              </div>
+              <a href="#" class="step-dot"></a> </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="font-weight-400 text-center mt-3 text-white">Send Money</h2>
+      <p class="lead text-center mb-4  text-white">Send your money on anytime, anywhere in the world.</p>
+      <div class="row">
+        <div class="col-md-9 col-lg-7 col-xl-6 mx-auto">
+          <div class="bg-white shadow-sm rounded p-3 pt-sm-4 pb-sm-5 px-sm-5 mb-4">
+            <h3 class="text-5 font-weight-400 mb-3 mb-sm-4">Personal Details</h3>
+            <hr class="mx-n3 mx-sm-n5 mb-4">
+            <!-- Send Money Form
+            ============================ -->
+            <form id="form-send-money" method="post">
+              <div class="form-group">
+                <label for="emailID">Recipient</label>
+                <input type="text" value="" class="form-control" data-bv-field="emailid" id="emailID" required placeholder="Enter Email Address">
+              </div>
+              <div class="form-group">
+                <label for="youSend">You Send</label>
+                <div class="input-group">
+                  <div class="input-group-prepend"> <span class="input-group-text">$</span> </div>
+                  <input type="text" class="form-control" data-bv-field="youSend" id="youSend" value="1,000" placeholder="">
+                  <div class="input-group-append"> <span class="input-group-text p-0">
+                    <select id="youSendCurrency" data-style="custom-select bg-transparent border-0" data-container="body" data-live-search="true" class="selectpicker form-control bg-transparent" required="">
+                      <optgroup label="Popular Currency">
+                      <option data-icon="currency-flag currency-flag-usd mr-1" data-subtext="United States dollar" selected="selected" value="">USD</option>
+                      <option data-icon="currency-flag currency-flag-aud mr-1" data-subtext="Australian dollar" value="">AUD</option>
+                      <option data-icon="currency-flag currency-flag-inr mr-1" data-subtext="Indian rupee" value="">INR</option>
+                      </optgroup>
+                      <option value="" data-divider="true">divider</option>
+                      <optgroup label="Other Currency">
+                      <option data-icon="currency-flag currency-flag-aed mr-1" data-subtext="United Arab Emirates dirham" value="">AED</option>
+                      <option data-icon="currency-flag currency-flag-ars mr-1" data-subtext="Argentine peso" value="">ARS</option>
+                      <option data-icon="currency-flag currency-flag-aud mr-1" data-subtext="Australian dollar" value="">AUD</option>
+                      <option data-icon="currency-flag currency-flag-bdt mr-1" data-subtext="Bangladeshi taka" value="">BDT</option>
+                      <option data-icon="currency-flag currency-flag-bgn mr-1" data-subtext="Bulgarian lev" value="">BGN</option>
+                      <option data-icon="currency-flag currency-flag-brl mr-1" data-subtext="Brazilian real" value="">BRL</option>
+                      <option data-icon="currency-flag currency-flag-cad mr-1" data-subtext="Canadian dollar" value="">CAD</option>
+                      <option data-icon="currency-flag currency-flag-chf mr-1" data-subtext="Swiss franc" value="">CHF</option>
+                      <option data-icon="currency-flag currency-flag-clp mr-1" data-subtext="Chilean peso" value="">CLP</option>
+                      <option data-icon="currency-flag currency-flag-cny mr-1" data-subtext="Chinese yuan" value="">CNY</option>
+                      <option data-icon="currency-flag currency-flag-czk mr-1" data-subtext="Czech koruna" value="">CZK</option>
+                      <option data-icon="currency-flag currency-flag-dkk mr-1" data-subtext="Danish krone" value="">DKK</option>
+                      <option data-icon="currency-flag currency-flag-egp mr-1" data-subtext="Egyptian pound" value="">EGP</option>
+                      <option data-icon="currency-flag currency-flag-eur mr-1" data-subtext="Euro" value="">EUR</option>
+                      <option data-icon="currency-flag currency-flag-gbp mr-1" data-subtext="British pound" value="">GBP</option>
+                      <option data-icon="currency-flag currency-flag-gel mr-1" data-subtext="Georgian lari" value="">GEL</option>
+                      <option data-icon="currency-flag currency-flag-ghs mr-1" data-subtext="Ghanaian cedi" value="">GHS</option>
+                      <option data-icon="currency-flag currency-flag-hkd mr-1" data-subtext="Hong Kong dollar" value="">HKD</option>
+                      <option data-icon="currency-flag currency-flag-hrk mr-1" data-subtext="Croatian kuna" value="">HRK</option>
+                      <option data-icon="currency-flag currency-flag-huf mr-1" data-subtext="Hungarian forint" value="">HUF</option>
+                      <option data-icon="currency-flag currency-flag-idr mr-1" data-subtext="Indonesian rupiah" value="">IDR</option>
+                      <option data-icon="currency-flag currency-flag-ils mr-1" data-subtext="Israeli shekel" value="">ILS</option>
+                      <option data-icon="currency-flag currency-flag-inr mr-1" data-subtext="Indian rupee" value="">INR</option>
+                      <option data-icon="currency-flag currency-flag-jpy mr-1" data-subtext="Japanese yen" value="">JPY</option>
+                      <option data-icon="currency-flag currency-flag-kes mr-1" data-subtext="Kenyan shilling" value="">KES</option>
+                      <option data-icon="currency-flag currency-flag-krw mr-1" data-subtext="South Korean won" value="">KRW</option>
+                      <option data-icon="currency-flag currency-flag-lkr mr-1" data-subtext="Sri Lankan rupee" value="">LKR</option>
+                      <option data-icon="currency-flag currency-flag-mad mr-1" data-subtext="Moroccan dirham" value="">MAD</option>
+                      <option data-icon="currency-flag currency-flag-mxn mr-1" data-subtext="Mexican peso" value="">MXN</option>
+                      <option data-icon="currency-flag currency-flag-myr mr-1" data-subtext="Malaysian ringgit" value="">MYR</option>
+                      <option data-icon="currency-flag currency-flag-ngn mr-1" data-subtext="Nigerian naira" value="">NGN</option>
+                      <option data-icon="currency-flag currency-flag-nok mr-1" data-subtext="Norwegian krone" value="">NOK</option>
+                      <option data-icon="currency-flag currency-flag-npr mr-1" data-subtext="Nepalese rupee" value="">NPR</option>
+                      <option data-icon="currency-flag currency-flag-nzd mr-1" data-subtext="New Zealand dollar" value="">NZD</option>
+                      <option data-icon="currency-flag currency-flag-pen mr-1" data-subtext="Peruvian nuevo sol" value="">PEN</option>
+                      <option data-icon="currency-flag currency-flag-php mr-1" data-subtext="Philippine peso" value="">PHP</option>
+                      <option data-icon="currency-flag currency-flag-pkr mr-1" data-subtext="Pakistani rupee" value="">PKR</option>
+                      <option data-icon="currency-flag currency-flag-pln mr-1" data-subtext="Polish złoty" value="">PLN</option>
+                      <option data-icon="currency-flag currency-flag-ron mr-1" data-subtext="Romanian leu" value="">RON</option>
+                      <option data-icon="currency-flag currency-flag-rub mr-1" data-subtext="Russian rouble" value="">RUB</option>
+                      <option data-icon="currency-flag currency-flag-sek mr-1" data-subtext="Swedish krona" value="">SEK</option>
+                      <option data-icon="currency-flag currency-flag-sgd mr-1" data-subtext="Singapore dollar" value="">SGD</option>
+                      <option data-icon="currency-flag currency-flag-thb mr-1" data-subtext="Thai baht" value="">THB</option>
+                      <option data-icon="currency-flag currency-flag-try mr-1" data-subtext="Turkish lira" value="">TRY</option>
+                      <option data-icon="currency-flag currency-flag-uah mr-1" data-subtext="Ukrainian hryvnia" value="">UAH</option>
+                      <option data-icon="currency-flag currency-flag-ugx mr-1" data-subtext="Ugandan shilling" value="">UGX</option>
+                      <option data-icon="currency-flag currency-flag-vnd mr-1" data-subtext="Vietnamese dong" value="">VND</option>
+                      <option data-icon="currency-flag currency-flag-zar mr-1" data-subtext="South African rand" value="">ZAR</option>
+                      </optgroup>
+                    </select>
+                    </span> </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="recipientGets">Recipient Gets</label>
+                <div class="input-group">
+                  <div class="input-group-prepend"> <span class="input-group-text">$</span> </div>
+                  <input type="text" class="form-control" data-bv-field="recipientGets" id="recipientGets" value="1,410.06" placeholder="">
+                  <div class="input-group-append"> <span class="input-group-text p-0">
+                    <select id="recipientCurrency" data-style="custom-select bg-transparent border-0" data-container="body" data-live-search="true" class="selectpicker form-control bg-transparent" required="">
+                      <optgroup label="Popular Currency">
+                      <option data-icon="currency-flag currency-flag-usd mr-1" data-subtext="United States dollar" value="">USD</option>
+                      <option data-icon="currency-flag currency-flag-aud mr-1" data-subtext="Australian dollar" selected="selected"  value="">AUD</option>
+                      <option data-icon="currency-flag currency-flag-inr mr-1" data-subtext="Indian rupee" value="">INR</option>
+                      </optgroup>
+                      <option value="" data-divider="true">divider</option>
+                      <optgroup label="Other Currency">
+                      <option data-icon="currency-flag currency-flag-aed mr-1" data-subtext="United Arab Emirates dirham" value="">AED</option>
+                      <option data-icon="currency-flag currency-flag-ars mr-1" data-subtext="Argentine peso" value="">ARS</option>
+                      <option data-icon="currency-flag currency-flag-aud mr-1" data-subtext="Australian dollar" value="">AUD</option>
+                      <option data-icon="currency-flag currency-flag-bdt mr-1" data-subtext="Bangladeshi taka" value="">BDT</option>
+                      <option data-icon="currency-flag currency-flag-bgn mr-1" data-subtext="Bulgarian lev" value="">BGN</option>
+                      <option data-icon="currency-flag currency-flag-brl mr-1" data-subtext="Brazilian real" value="">BRL</option>
+                      <option data-icon="currency-flag currency-flag-cad mr-1" data-subtext="Canadian dollar" value="">CAD</option>
+                      <option data-icon="currency-flag currency-flag-chf mr-1" data-subtext="Swiss franc" value="">CHF</option>
+                      <option data-icon="currency-flag currency-flag-clp mr-1" data-subtext="Chilean peso" value="">CLP</option>
+                      <option data-icon="currency-flag currency-flag-cny mr-1" data-subtext="Chinese yuan" value="">CNY</option>
+                      <option data-icon="currency-flag currency-flag-czk mr-1" data-subtext="Czech koruna" value="">CZK</option>
+                      <option data-icon="currency-flag currency-flag-dkk mr-1" data-subtext="Danish krone" value="">DKK</option>
+                      <option data-icon="currency-flag currency-flag-egp mr-1" data-subtext="Egyptian pound" value="">EGP</option>
+                      <option data-icon="currency-flag currency-flag-eur mr-1" data-subtext="Euro" value="">EUR</option>
+                      <option data-icon="currency-flag currency-flag-gbp mr-1" data-subtext="British pound" value="">GBP</option>
+                      <option data-icon="currency-flag currency-flag-gel mr-1" data-subtext="Georgian lari" value="">GEL</option>
+                      <option data-icon="currency-flag currency-flag-ghs mr-1" data-subtext="Ghanaian cedi" value="">GHS</option>
+                      <option data-icon="currency-flag currency-flag-hkd mr-1" data-subtext="Hong Kong dollar" value="">HKD</option>
+                      <option data-icon="currency-flag currency-flag-hrk mr-1" data-subtext="Croatian kuna" value="">HRK</option>
+                      <option data-icon="currency-flag currency-flag-huf mr-1" data-subtext="Hungarian forint" value="">HUF</option>
+                      <option data-icon="currency-flag currency-flag-idr mr-1" data-subtext="Indonesian rupiah" value="">IDR</option>
+                      <option data-icon="currency-flag currency-flag-ils mr-1" data-subtext="Israeli shekel" value="">ILS</option>
+                      <option data-icon="currency-flag currency-flag-inr mr-1" data-subtext="Indian rupee" value="">INR</option>
+                      <option data-icon="currency-flag currency-flag-jpy mr-1" data-subtext="Japanese yen" value="">JPY</option>
+                      <option data-icon="currency-flag currency-flag-kes mr-1" data-subtext="Kenyan shilling" value="">KES</option>
+                      <option data-icon="currency-flag currency-flag-krw mr-1" data-subtext="South Korean won" value="">KRW</option>
+                      <option data-icon="currency-flag currency-flag-lkr mr-1" data-subtext="Sri Lankan rupee" value="">LKR</option>
+                      <option data-icon="currency-flag currency-flag-mad mr-1" data-subtext="Moroccan dirham" value="">MAD</option>
+                      <option data-icon="currency-flag currency-flag-mxn mr-1" data-subtext="Mexican peso" value="">MXN</option>
+                      <option data-icon="currency-flag currency-flag-myr mr-1" data-subtext="Malaysian ringgit" value="">MYR</option>
+                      <option data-icon="currency-flag currency-flag-ngn mr-1" data-subtext="Nigerian naira" value="">NGN</option>
+                      <option data-icon="currency-flag currency-flag-nok mr-1" data-subtext="Norwegian krone" value="">NOK</option>
+                      <option data-icon="currency-flag currency-flag-npr mr-1" data-subtext="Nepalese rupee" value="">NPR</option>
+                      <option data-icon="currency-flag currency-flag-nzd mr-1" data-subtext="New Zealand dollar" value="">NZD</option>
+                      <option data-icon="currency-flag currency-flag-pen mr-1" data-subtext="Peruvian nuevo sol" value="">PEN</option>
+                      <option data-icon="currency-flag currency-flag-php mr-1" data-subtext="Philippine peso" value="">PHP</option>
+                      <option data-icon="currency-flag currency-flag-pkr mr-1" data-subtext="Pakistani rupee" value="">PKR</option>
+                      <option data-icon="currency-flag currency-flag-pln mr-1" data-subtext="Polish złoty" value="">PLN</option>
+                      <option data-icon="currency-flag currency-flag-ron mr-1" data-subtext="Romanian leu" value="">RON</option>
+                      <option data-icon="currency-flag currency-flag-rub mr-1" data-subtext="Russian rouble" value="">RUB</option>
+                      <option data-icon="currency-flag currency-flag-sek mr-1" data-subtext="Swedish krona" value="">SEK</option>
+                      <option data-icon="currency-flag currency-flag-sgd mr-1" data-subtext="Singapore dollar" value="">SGD</option>
+                      <option data-icon="currency-flag currency-flag-thb mr-1" data-subtext="Thai baht" value="">THB</option>
+                      <option data-icon="currency-flag currency-flag-try mr-1" data-subtext="Turkish lira" value="">TRY</option>
+                      <option data-icon="currency-flag currency-flag-uah mr-1" data-subtext="Ukrainian hryvnia" value="">UAH</option>
+                      <option data-icon="currency-flag currency-flag-ugx mr-1" data-subtext="Ugandan shilling" value="">UGX</option>
+                      <option data-icon="currency-flag currency-flag-vnd mr-1" data-subtext="Vietnamese dong" value="">VND</option>
+                      <option data-icon="currency-flag currency-flag-zar mr-1" data-subtext="South African rand" value="">ZAR</option>
+                      </optgroup>
+                    </select>
+                    </span> </div>
+                </div>
+              </div>
+              <p class="text-muted text-center">The current exchange rate is <span class="font-weight-500">1 USD = 1.42030 AUD</span></p>
+              <hr>
+              <p>Total Fees <span class="float-right">7.21 USD</span></p>
+              <hr>
+              <p class="text-4 font-weight-500">Total To Pay<span class="float-right">1,000.00 USD</span></p>
+              <button class="btn btn-primary btn-block">Continue</button>
+            </form>
+            <!-- Send Money Form end --> 
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
 
     <!--Hero Area-->
-    <section class="hero-area gradient-overlay" style="/*background: url('assets/images/banner/3.jpg')*/ /*no-repeat center center*/;">
+   <!--  <section class="hero-area gradient-overlay">
         <div class="container">
             <div class="row">
                 <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12">
@@ -141,55 +310,14 @@
 
                         </div>
                         <input type="submit" class="bttn-mid btn-fill w-100 mt-20 faruk-form-button" value="Continue">
-                            <!-- <i class="ti-check"></i> -->
+                        
                     </form>
                 </div>
-                <!-- safe form as like before  -->
-                <!--                 <div class="col-xl-4 col-lg-6 col-md-5 col-sm-12">
-                    <form action="#" class="hero-form">
-                        <h4>Send Money</h4>
-                        <label for="validationTooltipUsername">You're sending</label>
-                        <div class="input-group">
-                            <div class="input-group-prepend">
-                              <span class="input-group-text" id="inputGroupPrepend">$</span>
-                            </div>
-                            <input type="text" class="form-control" value="500" id="validationTooltipUsername" aria-describedby="inputGroupPrepend" required>
-                            <select name="currency" class="custom-select">
-                                <option value="">USD</option>
-                                <option value="">AUD</option>
-                                <option value="">GBP</option>
-                            </select>
-                        </div>
-                        <label for="validationCustomUsername">Recipient Gets</label>
-                        <div class="input-group">
-                            <div class="input-group-prepend">
-                              <span class="input-group-text" id="inputGroupPrepend2">$</span>
-                            </div>
-                            <input type="text" class="form-control" value="688.74" id="validationCustomUsername" aria-describedby="inputGroupPrepend2" required>
-                            <select name="currency" class="custom-select">
-                                <option value="">CAD</option>
-                                <option value="">AUD</option>
-                                <option value="">USD</option>
-                                <option value="">GBP</option>
-                            </select>
-                        </div>
-                        <p>Total fees - 8.55 USD </p> <p>The current exchange rate is 1 USD = 1.40 CAD</p>
-                        <button class="bttn-mid btn-fill w-100 mt-20"><i class="ti-check"></i>Continue</button>
-                    </form>
-                </div> -->
+               
             </div>
         </div>
-      <!--   <div class="hero-bg-alimation">
-            <ul class="box">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </div> -->
-    </section><!--/Hero Area-->
+    </section> -->
+    <!--/Hero Area-->
 
     <!--Map-->
 
@@ -206,106 +334,68 @@
     <section class="section reserve-section">
         <div class="container">
             <div class=" faruk-section-title mb-50 centered"; >
-                    <h2>Our Reserve</h2>
+                    <h2 class="">Our Reserve</h2>
             </div>
             <div class="row m-auto">
-                <div class="col-md-4 reserve-area">
-                         <div class="reserve-item d-flex">
-                              <div class="reserve-image">
-                                  <img src="assets/images/limon-icon/bkash-agent.png" class="img-circle img-bordered pull-left">
-                              </div>
-                              <div class="reserve-text">
-                                 <h5>bKash Agent BDT</h5>
-                                 <p>200500 BDT</p>
-                              </div>
-                         </div>
-                         <div class="reserve-item d-flex">
-                              <div class="reserve-image">
-                                  <img src="assets/images/limon-icon/bikash_icon.png" class="img-circle img-bordered pull-left">
-                              </div>
-                              <div class="reserve-text">
-                                 <h5>bKash Personal BDT</h5>
-                                 <p>150100 BDT</p>
-                              </div>
-                         </div>
-                          <div class="reserve-item d-flex">
-                              <div class="reserve-image">
-                                  <img src="assets/images/limon-icon/nagoud.png" class="img-circle img-bordered pull-left">
-                              </div>
-                              <div class="reserve-text">
-                                 <h5>Nagad Personal BDT</h5>
-                                 <p>25100 BDT</p>
-                              </div>
-                         </div>
-                          <div class="reserve-item d-flex">
-                              <div class="reserve-image">
-                                  <img src="assets/images/limon-icon/rocket.jpg" class="img-circle img-bordered pull-left">
-                              </div>
-                              <div class="reserve-text">
-                                 <h5>Rocket DBBL BDT</h5>
-                                 <p>50200 BDT</p>
-                              </div>
-                        </div>
-                        <div class="reserve-item d-flex">
-                              <div class="reserve-image">
-                                  <img src="assets/images/limon-icon/bank-transfer.png" width="75" height="75">
-                              </div>
-                              <div class="reserve-text">
-                                 <h5>Bank Transfer~ BDT</h5>
-                                 <p>500000 BDT</p>
-                              </div>
-                         </div>
+                <div class="col-md-9 reserve-area">
+                      <div class="table-responsive">
+                    <table class="col-xl-12 table table-bordered table-striped  table-hover">
+                      <thead>
+                        <tr>
+                          <th scope="col">Send</th>
+                          <th scope="col">Recived</th>
+                          <th scope="col">Amount</th>
+                          <th scope="col">Exchange ID</th>
+                          <th scope="col">Status</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td scope="row"><img src="assets/images/limon-icon/bikash_icon.png" width="20px" height="20px" style="margin-right:8px;">bKash Personal BDT</td>
+                          <td><img src="assets/images/limon-icon/Bhim_icon.png" width="20px" height="20px" style="margin-right:8px;"> BHIM UPI INR</td>
+                          <td>2000 BDT  (1600.00 INR)</td>
+                          <td>DE6939FA19</td>
+                          <td >
+                            <span class="label label-info"data-toggle="tooltip" data-placement="top" title="" data-original-title="Processing"> <i class="fa fa-clock-o"></i> Pending</span>
+                        </td>
+                        </tr>
+                        <tr>
+                          <td scope="row"><img src="assets/images/limon-icon/bikash_icon.png" width="20px" height="20px" style="margin-right:8px;">bKash Personal BDT</td>
+                          <td><img src="assets/images/limon-icon/Bhim_icon.png" width="20px" height="20px" style="margin-right:8px;" style="margin-right:8px;"> BHIM UPI INR</td>
+                          <td>2000 BDT  (1600.00 INR)</td>
+                          <td>DE6939FA19</td>
+                          <td class="label label-warning">
+                            <span class="label label-warning" data-toggle="tooltip" data-placement="top" title="" data-original-title="Awaiting Payment"><i class="fa fa-clock-o"></i> Waiting</span>
+                        </td>
+                        </tr>
+                        <tr>
+                          <td scope="row"><img src="assets/images/limon-icon/bikash_icon.png" width="20px" height="20px" style="margin-right:8px;">bKash Personal BDT</td>
+                          <td><img src="assets/images/limon-icon/Bhim_icon.png" width="20px" height="20px" style="margin-right:8px;"> BHIM UPI INR</td>
+                          <td>2000 BDT  (1600.00 INR)</td>
+                          <td>DE6939FA19</td>
+                          <td><span class="label label-success"><i class="fa fa-check"></i> Completed</span></td>
+                        </tr>
+                       <tr>
+                          <td><img src="assets/images/limon-icon/Bhim_icon.png" width="20px" height="20px" style="margin-right:8px;"> BHIM UPI INR</td>
+                          <td scope="row"><img src="assets/images/limon-icon/bikash_icon.png" width="20px" height="20px" style="margin-right:8px;">bKash Personal BDT</td>
+                          <td>500.00 INR (515BDT BDT)</td>
+                          <td>DE6939FA19</td>
+                          <td><span class="label label-success"><i class="fa fa-check"></i> Completed</span></td>
+                        </tr>
+                        <tr>
+                          <td scope="row"><img src="assets/images/limon-icon/bikash_icon.png" width="20px" height="20px" style="margin-right:8px;">bKash Personal BDT</td>
+                          <td><img src="assets/images/limon-icon/webmoney_icon.png" width="20px" height="20px" style="margin-right:8px;"> WebMoney - USD</td>
+                          <td>1000 BDT (10.53 USD)</td>
+                          <td>DE6939FA19</td>
+                          <td><span class="label label-success"><i class="fa fa-check"></i> Completed</span></td>
+                        </tr>
+                        
+                      </tbody>
+                    </table>
+                </div>
 
                 </div>
-                <div class="col-md-4 reserve-area">
-                         <div class="reserve-item d-flex">
-                              <div class="reserve-image">
-                                  <img src="assets/images/limon-icon/Bhim_icon.jpg" width="75" height="75">
-                              </div>
-                              <div class="reserve-text">
-                                 <h5>BHIM UPI INR</h5>
-                                 <p>150500 BDT</p>
-                              </div>
-                         </div>
-                         <div class="reserve-item d-flex">
-                              <div class="reserve-image">
-                                  <img src="assets/images/limon-icon/ptm.png" class="img-circle img-bordered pull-left">
-                              </div>
-                              <div class="reserve-text">
-                                 <h5>PayTm Wallet INR</h5>
-                                 <p>10000 INR</p>
-                              </div>
-                         </div>
-                         <div class="reserve-item d-flex">
-                              <div class="reserve-image">
-                                  <img src="assets/images/limon-icon/phonep.png" width="75" height="75">
-                              </div>
-                              <div class="reserve-text">
-                                 <h5>PhonePe INR</h5>
-                                 <p>5000 INR</p>
-                              </div>
-                         </div>
-                         <div class="reserve-item d-flex">
-                              <div class="reserve-image">
-                                  <img src="assets/images/limon-icon/bank-transfer.png" width="75" height="75">
-                              </div>
-                              <div class="reserve-text">
-                                 <h5>Bank Transfer~ INR</h5>
-                                 <p>50000 INR</p>
-                              </div>
-                         </div>
-                         <div class="reserve-item d-flex">
-                              <div class="reserve-image">
-                                  <img src="assets/images/limon-icon/webmoney_icon.png" width="75" height="75">
-                              </div>
-                              <div class="reserve-text">
-                                 <h5>WebMoney- USD</h5>
-                                 <p>300.20 USD</p>
-                              </div>
-                         </div>
-
-                </div>
-                <div class="col-md-4 reserve-area">
+                <div class="col-md-3 reserve-area">
                          <div class="reserve-item d-flex">
                               <div class="reserve-image">
                                   <img src="assets/images/limon-icon/Bitcoin.png" width="75" height="75">
@@ -342,15 +432,6 @@
                                  <p>1000.20 USD</p>
                               </div>
                          </div>
-                         <div class="reserve-item d-flex">
-                              <div class="reserve-image">
-                                  <img src="assets/images/limon-icon/payeer.png" width="75" height="75">
-                              </div>
-                              <div class="reserve-text">
-                                 <h5>Payeer ~ USD</h5>
-                                 <p>800.20 USD</p>
-                              </div>
-                         </div>
                 </div>
             </div>
         </div> 
@@ -360,7 +441,7 @@
     <section class="section processing-section">
         <div class="container">
              <div class=" faruk-section-title mb-50 centered"; >
-                    <h2>Process & Pending Exchanges</h2>
+                    <h2 class="text-white">Process & Pending Exchanges</h2>
             </div>
             <div class="row">
                 <div class="table-responsive">
@@ -426,7 +507,7 @@
     <section  class="section complate-progress-section">
         <div class="container">
              <div class="faruk-section-title mb-50 centered"; >
-                <h2> Our Exchange Performance</h2>
+                <h2 class="text-white"> Our Exchange Performance</h2>
             </div>
         <div class="row">
              <div class="col-md-4 complete-color">
@@ -434,27 +515,27 @@
             <circle class="incomplete" cx="40" cy="40" r="35"></circle>
             <circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 39.58406743523136;">
             </circle>
-            <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">99%</text>
+            <text class="percentage text-white" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">99%</text>
             </svg> 
-             <h4>Completed Exchange</h4>
+             <h4 class="text-white">Completed Exchange</h4>
         </div>
         <div class="col-md-4 waiting-color">
             <svg class="radial-progress" data-percentage="65" viewBox="0 0 80 80">
             <circle class="incomplete" cx="40" cy="40" r="35"></circle>
             <circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 39.58406743523136;">
             </circle>
-            <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">65%</text>
+            <text class="percentage text-white" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">65%</text>
             </svg> 
-            <h4>Waiting Exchange</h4>
+            <h4 class="text-white">Waiting Exchange</h4>
         </div>
         <div class="col-md-4 pending-color">
             <svg class="radial-progress " data-percentage="25" viewBox="0 0 80 80">
             <circle class="incomplete" cx="40" cy="40" r="35"></circle>
             <circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 39.58406743523136;">
             </circle>
-            <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">25%</text>
+            <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)" >25%</text>
             </svg> 
-           <h4>Pending Exchange</h4>
+           <h4 class="text-white">Pending Exchange</h4>
         </div>
     </div>
         </div>
@@ -464,7 +545,7 @@
     <section class="section  completed-section">
         <div class="container">
              <div class=" faruk-section-title mb-50 centered"; >
-                    <h2>Completed Exchanges</h2>
+                    <h2 class="text-white">Completed Exchanges</h2>
             </div>
             <div class="row">
                 <div class="table-responsive">
@@ -635,356 +716,6 @@
             </div>
         </div>
     </section>
-
-    <!--Why Choose Us-->
-<!--  <section class="section-padding-3 blue-bg">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-xl-8 centered">
-                    <div class="section-title mb-60">
-                        <h4><span>New</span> Why Choose us</h4>
-                        <h2>We're Special</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
-                    <div class="single-why-choose">
-                        <div class="icon">
-                            <i class="flaticon-007-user"></i>
-                        </div>
-                        <div class="title">
-                            <h3>Stable Useability</h3>
-                        </div>
-                        <p>Voluptatibus, fugiat. Perspiciatis libero saepe ullam rem qui</p>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
-                    <div class="single-why-choose">
-                        <div class="icon">
-                            <i class="flaticon-006-wallet"></i>
-                        </div>
-                        <div class="title">
-                            <h3>Different Wallet</h3>
-                        </div>
-                        <p>Voluptatibus, fugiat. Perspiciatis libero saepe ullam rem qui</p>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
-                    <div class="single-why-choose">
-                        <div class="icon">
-                            <i class="flaticon-2991852"></i>
-                        </div>
-                        <div class="title">
-                            <h3>Multiple Currency</h3>
-                        </div>
-                        <p>Voluptatibus, fugiat. Perspiciatis libero saepe ullam rem qui</p>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
-                    <div class="single-why-choose">
-                        <div class="icon">
-                            <i class="flaticon-2991872"></i>
-                        </div>
-                        <div class="title">
-                            <h3>Low Rate</h3>
-                        </div>
-                        <p>Voluptatibus, fugiat. Perspiciatis libero saepe ullam rem qui</p>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
-                    <div class="single-why-choose">
-                        <div class="icon">
-                            <i class="flaticon-2991871"></i>
-                        </div>
-                        <div class="title">
-                            <h3>Different Wallet</h3>
-                        </div>
-                        <p>Voluptatibus, fugiat. Perspiciatis libero saepe ullam rem qui</p>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
-                    <div class="single-why-choose">
-                        <div class="icon">
-                            <i class="flaticon-023-line-chart"></i>
-                        </div>
-                        <div class="title">
-                            <h3>Multiple Currency</h3>
-                        </div>
-                        <p>Voluptatibus, fugiat. Perspiciatis libero saepe ullam rem qui</p>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
-                    <div class="single-why-choose">
-                        <div class="icon">
-                            <i class="flaticon-030-carrier"></i>
-                        </div>
-                        <div class="title">
-                            <h3>Low Rate</h3>
-                        </div>
-                        <p>Voluptatibus, fugiat. Perspiciatis libero saepe ullam rem qui</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-   
-    <!--/Why Choose Us-->
-
-    <!--About Area-->
-
-<!--     <section class="section-padding-2 blue-bg-2 dots-after">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12 cl-white mb-30">
-                    <div class="section-title">
-                        <h4><span>Top</span>What we do?</h4>
-                        <h2>There is what we do</h2>
-                    </div>
-                    <p class="cl-white-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, veniam. Quisquam dicta, atque nemo error impedit necessitatibus, incidunt rem architecto optio facilis aut illo labore numquam et soluta quo. Ratione! Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem aliquam amet nulla eius voluptates rem numquam ipsa, dolores ratione soluta quo tempora, quis sit. Amet fugit autem nobis officiis eius.</p>
-                    <div class="row mb-20">
-                        <div class="col-xl-6 col-md-12">
-                            <h5 class="mb-10">Mission</h5>
-                            <p class="cl-white-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni, velit. Facere pariatur iste cupiditate ea, animi nihil dolor iusto amet error libero aut deleniti quas laboriosam accusamus, unde quisquam dolorem. Lorem ipsum, dolor sit amet consectetur adipisicing elit</p>
-                        </div>
-                        <div class="col-xl-6 col-md-12">
-                            <h5 class="mb-10">Vission</h5>
-                            <p class="cl-white-light">Inventore? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat, inventore quae laudantium accusamus adipisci sequi veritatis saepe aspernatur libero fuga illo voluptas nihil. Sequi, quis aspernatur! Deserunt pariatur quas reiciendis!</p>
-                        </div>
-                    </div>
-                    
-                    <a href="about.html" class="bttn-small btn-fill">Continue Reading</a>
-                </div>
-                <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12">
-                    <div class="about-img">
-                        <img src="assets/images/about.jpg" alt="">
-                        <a href="https://www.youtube.com/watch?v=DJyxwIGdl8Y" class="video-popup"><i class="fa fa-play"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
-    <!--/About Area-->
-
-    <!--Solutions Section-->
-    <section class="section-padding-2 blue-bg">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-8 col-md-12">
-                    <div class="section-title">
-                        <h4><span>new</span>Anyone can use</h4>
-                        <h2>Solutions for</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
-                    <div class="single-product">
-                        <div class="product-pro-img">
-                            <img src="assets/images/users/1.jpg" alt="">
-                        </div>
-                        <div class="product-pro-title">
-                            <h3><a href="#">Freelancer</a></h3>
-                            <p>Dolorem accusamus maiores hic assumenda illum perferendis</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
-                    <div class="single-product">
-                        <div class="product-pro-img">
-                            <img src="assets/images/users/2.jpg" alt="">
-                        </div>
-                        <div class="product-pro-title">
-                            <h3><a href="#">Internet Retailer</a></h3>
-                            <p>Dolorem accusamus maiores hic assumenda illum perferendis</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
-                    <div class="single-product">
-                        <div class="product-pro-img">
-                            <img src="assets/images/users/3.jpg" alt="">
-                        </div>
-                        <div class="product-pro-title">
-                            <h3><a href="#">Online Professional</a></h3>
-                            <p>Dolorem accusamus maiores hic assumenda illum perferendis</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
-                    <div class="single-product">
-                        <div class="product-pro-img">
-                            <img src="assets/images/users/4.jpg" alt="">
-                        </div>
-                        <div class="product-pro-title">
-                            <h3><a href="#">Affiliate Marketer</a></h3>
-                            <p>Dolorem accusamus maiores hic assumenda illum perferendis</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section><!--/Solutions Section-->
-
-    <!-- What we do -->
-    <section class="section-padding-2 blue-bg-2">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-xl-7 col-lg-7 col-md-12 centered">
-                    <div class="section-title">
-                        <h4><span>new</span> What we're doing?</h4>
-                        <h2>Follow this stepts</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
-                    <div class="single-what-we-do">
-                        <div class="icon">
-                            <i class="ti-ruler-pencil"></i>
-                        </div>
-                        <div class="title">
-                            <h3>Send Money</h3>
-                        </div>
-                        <p>Quae omnis et alias quisquam quod? Laborum accusamus sed exercitationem quod</p>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
-                    <div class="single-what-we-do">
-                        <div class="icon">
-                            <i class="ti-layout"></i>
-                        </div>
-                        <div class="title">
-                            <h3>Currency Exchange</h3>
-                        </div>
-                        <p>Quae omnis et alias quisquam quod? Laborum accusamus sed exercitationem quod</p>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
-                    <div class="single-what-we-do">
-                        <div class="icon">
-                            <i class="ti-cup"></i>
-                        </div>
-                        <div class="title">
-                            <h3>Widthdraw</h3>
-                        </div>
-                        <p>Quae omnis et alias quisquam quod? Laborum accusamus sed exercitationem quod</p>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
-                    <div class="single-what-we-do">
-                        <div class="icon">
-                            <i class="ti-package"></i>
-                        </div>
-                        <div class="title">
-                            <h3>Deposit</h3>
-                        </div>
-                        <p>Quae omnis et alias quisquam quod? Laborum accusamus sed exercitationem quod</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section><!-- /What we do --> 
-
-    <!--Packages-->
-<!--     <section class="section-padding-2 blue-bg dots-before">
-        <div class="container-fluid">
-            <div class="row justify-content-center">
-                <div class="col-xl-8">
-                    <div class="section-title cl-white centered">
-                        <h4><span>Hot</span>Best Packages</h4>
-                        <h2>Hotlight Packages</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xl-12">
-                    <div class="jackpots owl-carousel">
-                        <div class="single-jackpot">
-                            <a href="#">
-                                <img src="assets/images/jackpots/1.jpg" alt="">
-                                <div class="content">
-                                    <div class="name">Horus</div>
-                                    <div class="price-play">$5,268 <span><i class="fa fa-play"></i></span></div>
-                                    <div class="mrp">85% MRP <i class="fa fa-arrow-up cl-primary"></i></div>
-                                    <span class="bttn-small btn-fill w-100">Get now</span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="single-jackpot">
-                            <a href="#">
-                                <img src="assets/images/jackpots/2.jpg" alt="">
-                                <div class="content">
-                                    <div class="name">Frogs</div>
-                                    <div class="price-play">$5,268 <span><i class="fa fa-play"></i></span></div>
-                                    <div class="mrp">25% MRP <i class="fa fa-arrow-down cl-red"></i></div>
-                                    <span class="bttn-small btn-fill w-100">Get now</span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="single-jackpot">
-                            <a href="#">
-                                <img src="assets/images/jackpots/3.jpg" alt="">
-                                <div class="content">
-                                    <div class="name">Warfare</div>
-                                    <div class="price-play">$5,268 <span><i class="fa fa-play"></i></span></div>
-                                    <div class="mrp">25% MRP <i class="fa fa-arrow-down cl-red"></i></div>
-                                    <span class="bttn-small btn-fill w-100">Get now</span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="single-jackpot">
-                            <a href="#">
-                                <img src="assets/images/jackpots/4.jpg" alt="">
-                                <div class="content">
-                                    <div class="name">Tiger man</div>
-                                    <div class="price-play">$5,268 <span><i class="fa fa-play"></i></span></div>
-                                    <div class="mrp">85% MRP <i class="fa fa-arrow-up cl-primary"></i></div>
-                                    <span class="bttn-small btn-fill w-100">Get now</span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="single-jackpot">
-                            <a href="#">
-                                <img src="assets/images/jackpots/5.jpg" alt="">
-                                <div class="content">
-                                    <div class="name">Dragons paw</div>
-                                    <div class="price-play">$5,268 <span><i class="fa fa-play"></i></span></div>
-                                    <div class="mrp">25% MRP <i class="fa fa-arrow-down cl-red"></i></div>
-                                    <span class="bttn-small btn-fill w-100">Get now</span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="single-jackpot">
-                            <a href="#">
-                                <img src="assets/images/jackpots/6.jpg" alt="">
-                                <div class="content">
-                                    <div class="name">Fox flier</div>
-                                    <div class="price-play">$5,268 <span><i class="fa fa-play"></i></span></div>
-                                    <div class="mrp">85% MRP <i class="fa fa-arrow-up cl-primary"></i></div>
-                                    <span class="bttn-small btn-fill w-100">Get now</span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="single-jackpot">
-                            <a href="#">
-                                <img src="assets/images/jackpots/4.jpg" alt="">
-                                <div class="content">
-                                    <div class="name">Fox flier</div>
-                                    <div class="price-play">$5,268 <span><i class="fa fa-play"></i></span></div>
-                                    <div class="mrp">85% MRP <i class="fa fa-arrow-down cl-red"></i></div>
-                                    <span class="bttn-small btn-fill w-100">Get now</span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <!--/Packages-->  
-
     <!--Call to action-->
     <section class="section-padding-2 blue-bg-2 dots-before">
         <div class="container">
@@ -1042,614 +773,6 @@
             </div>
         </div>
     </section><!--/Call to action-->
-
-    <!-- New User Area -->
-<!--     <section class="section-padding blue-bg dots-after">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-xl-6 centered">
-                    <div class="section-title cl-white">
-                        <h4><span>New</span>Top Users</h4>
-                        <h2>Best Users</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-xl-1 col-lg-1 col-md-2 col-sm-3 col-4">
-                    <div class="single-new-user" data-toggle="tooltip" data-placement="top" title="" data-original-title="John Harison">
-                        <img src="assets/images/new-user/1.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-xl-1 col-lg-1 col-md-2 col-sm-3 col-4">
-                    <div class="single-new-user" data-toggle="tooltip" data-placement="top" title="" data-original-title="Verna Valdez">
-                        <img src="assets/images/new-user/2.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-xl-1 col-lg-1 col-md-2 col-sm-3 col-4">
-                    <div class="single-new-user" data-toggle="tooltip" data-placement="top" title="" data-original-title="Leticia Romero">
-                        <img src="assets/images/new-user/3.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-xl-1 col-lg-1 col-md-2 col-sm-3 col-4">
-                    <div class="single-new-user" data-toggle="tooltip" data-placement="top" title="" data-original-title="Erica Rodriquez">
-                        <img src="assets/images/new-user/4.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-xl-1 col-lg-1 col-md-2 col-sm-3 col-4">
-                    <div class="single-new-user" data-toggle="tooltip" data-placement="top" title="" data-original-title="Nathan Murray">
-                        <img src="assets/images/new-user/5.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-xl-1 col-lg-1 col-md-2 col-sm-3 col-4">
-                    <div class="single-new-user" data-toggle="tooltip" data-placement="top" title="" data-original-title="Kerry Dixon">
-                        <img src="assets/images/new-user/6.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-xl-1 col-lg-1 col-md-2 col-sm-3 col-4">
-                    <div class="single-new-user" data-toggle="tooltip" data-placement="top" title="" data-original-title="Ollie Fleming">
-                        <img src="assets/images/new-user/7.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-xl-1 col-lg-1 col-md-2 col-sm-3 col-4">
-                    <div class="single-new-user" data-toggle="tooltip" data-placement="top" title="" data-original-title="Lynda Gregory">
-                        <img src="assets/images/new-user/8.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-xl-1 col-lg-1 col-md-2 col-sm-3 col-4">
-                    <div class="single-new-user" data-toggle="tooltip" data-placement="top" title="" data-original-title="Leigh Bates">
-                        <img src="assets/images/new-user/9.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-xl-1 col-lg-1 col-md-2 col-sm-3 col-4">
-                    <div class="single-new-user" data-toggle="tooltip" data-placement="top" title="" data-original-title="Wanda Boone">
-                        <img src="assets/images/new-user/10.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-xl-1 col-lg-1 col-md-2 col-sm-3 col-4">
-                    <div class="single-new-user" data-toggle="tooltip" data-placement="top" title="" data-original-title="Cristina James">
-                        <img src="assets/images/new-user/11.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-xl-1 col-lg-1 col-md-2 col-sm-3 col-4">
-                    <div class="single-new-user" data-toggle="tooltip" data-placement="top" title="" data-original-title="Emilio Fuller">
-                        <img src="assets/images/new-user/12.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-xl-1 col-lg-1 col-md-2 col-sm-3 col-4">
-                    <div class="single-new-user" data-toggle="tooltip" data-placement="top" title="" data-original-title="John Harison">
-                        <img src="assets/images/new-user/10.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-xl-1 col-lg-1 col-md-2 col-sm-3 col-4">
-                    <div class="single-new-user" data-toggle="tooltip" data-placement="top" title="" data-original-title="Verna Valdez">
-                        <img src="assets/images/new-user/12.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-xl-1 col-lg-1 col-md-2 col-sm-3 col-4">
-                    <div class="single-new-user" data-toggle="tooltip" data-placement="top" title="" data-original-title="Leticia Romero">
-                        <img src="assets/images/new-user/11.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-xl-1 col-lg-1 col-md-2 col-sm-3 col-4">
-                    <div class="single-new-user" data-toggle="tooltip" data-placement="top" title="" data-original-title="Erica Rodriquez">
-                        <img src="assets/images/new-user/2.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-xl-1 col-lg-1 col-md-2 col-sm-3 col-4">
-                    <div class="single-new-user" data-toggle="tooltip" data-placement="top" title="" data-original-title="Nathan Murray">
-                        <img src="assets/images/new-user/3.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-xl-1 col-lg-1 col-md-2 col-sm-3 col-4">
-                    <div class="single-new-user" data-toggle="tooltip" data-placement="top" title="" data-original-title="Kerry Dixon">
-                        <img src="assets/images/new-user/1.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-xl-1 col-lg-1 col-md-2 col-sm-3 col-4">
-                    <div class="single-new-user" data-toggle="tooltip" data-placement="top" title="" data-original-title="Ollie Fleming">
-                        <img src="assets/images/new-user/4.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-xl-1 col-lg-1 col-md-2 col-sm-3 col-4">
-                    <div class="single-new-user" data-toggle="tooltip" data-placement="top" title="" data-original-title="Lynda Gregory">
-                        <img src="assets/images/new-user/6.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-xl-1 col-lg-1 col-md-2 col-sm-3 col-4">
-                    <div class="single-new-user" data-toggle="tooltip" data-placement="top" title="" data-original-title="Leigh Bates">
-                        <img src="assets/images/new-user/5.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-xl-1 col-lg-1 col-md-2 col-sm-3 col-4">
-                    <div class="single-new-user" data-toggle="tooltip" data-placement="top" title="" data-original-title="Wanda Boone">
-                        <img src="assets/images/new-user/7.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-xl-1 col-lg-1 col-md-2 col-sm-3 col-4">
-                    <div class="single-new-user" data-toggle="tooltip" data-placement="top" title="" data-original-title="Cristina James">
-                        <img src="assets/images/new-user/9.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-xl-1 col-lg-1 col-md-2 col-sm-3 col-4">
-                    <div class="single-new-user" data-toggle="tooltip" data-placement="top" title="" data-original-title="Emilio Fuller">
-                        <img src="assets/images/new-user/8.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-xl-6 centered">
-                    <a href="register.html" class="bttn-small btn-fill">Signup now</a>
-                </div>
-            </div>
-        </div>
-    </section> --><!-- New User Area -->
-                
-    <!-- Counter Area -->
-<!--     <section class="section-padding-2 gradient-overlay" style="background: url('assets/images/banner/3.jpg') no-repeat fixed;">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
-                    <div class="single-new-counter">
-                        <i class="flaticon-011-share"></i>
-                        <h3 class="count">5246</h3>
-                        <h5>Lines of code</h5>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
-                    <div class="single-new-counter">
-                        <i class="flaticon-028-coins"></i>
-                        <h3 class="count">2016</h3>
-                        <h5>Cup of coffee</h5>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
-                    <div class="single-new-counter">
-                        <i class="flaticon-026-hierarchy"></i>
-                        <h3 class="count">68</h3>
-                        <h5>Project done</h5>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
-                    <div class="single-new-counter">
-                        <i class="flaticon-2991877"></i>
-                        <h3>$<span class="count">11.5</span>M</h3>
-                        <h5>Daily Transaction</h5>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <!-- /Counter Area -->
-
-    <!-- Testimonials -->
-<!--     <section class="section-padding blue-bg">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-xl-6 col-lg-6 col-md-12 centered">
-                    <div class="section-title">
-                        <h4><span>new</span> What users say about us</h4>
-                        <h2>You will get confident to start using us</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-xl-8 col-lg-8 col-md-12 centered">
-                    <div class="testimonials owl-carousel">
-                        <div class="single-testimonial">
-                            <div class="text">
-                               Rerum vitae commodi dicta error quaerat debitis magnam numquam earum! In vel dolorum repudiandae aspernatur praesentium incidunt molestias enim quis sapiente perspiciatis
-                            </div>
-                            <div class="person">
-                                <img src="assets/images/reviewer/1.jpg" alt="">
-                                <h4>Nick Herison</h4>
-                                <p>Freelancer</p>
-                            </div>
-                        </div>
-                        <div class="single-testimonial">
-                            <div class="text">
-                               Rerum vitae commodi dicta error quaerat debitis magnam numquam earum! In vel dolorum repudiandae aspernatur praesentium incidunt molestias enim quis sapiente perspiciatis
-                            </div>
-                            <div class="person">
-                                <img src="assets/images/reviewer/2.jpg" alt="">
-                                <h4>Nick Herison</h4>
-                                <p>Freelancer</p>
-                            </div>
-                        </div>
-                        <div class="single-testimonial">
-                            <div class="text">
-                               Rerum vitae commodi dicta error quaerat debitis magnam numquam earum! In vel dolorum repudiandae aspernatur praesentium incidunt molestias enim quis sapiente perspiciatis
-                            </div>
-                            <div class="person">
-                                <img src="assets/images/reviewer/3.jpg" alt="">
-                                <h4>Nick Herison</h4>
-                                <p>Freelancer</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
-    <!-- /Testimonials -->
-
-    <!-- Pricing Section-->
-
-   <!--  
-   <section class="section-padding-2 blue-bg-2">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-12">
-                    <div class="section-title">
-                        <h4><span>New</span> Pricing</h4>
-                        <h2>Price List</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
-                    <div class="single-price-table">
-                        <div class="pricing-title">
-                            <i class="ti-settings"></i>
-                            <h2>Basic</h2>
-                        </div>
-                        <div class="pricing-price">
-                            <h4><sup>$</sup>25<span>/ Monthly</span></h4>
-                        </div>
-                        <div class="pricing-body">
-                            <ul>
-                                <li><i class="ti-check"></i>Limited Man power</li>
-                                <li><i class="ti-check"></i>Free Advertisement</li>
-                                <li><i class="ti-check"></i>Advanced Options</li>
-                                <li class="cross"><i class="ti-close"></i>24/7 Support</li>
-                            </ul>
-                        </div>
-                        <a href="#" class="bttn-small btn-fill">Start now</a>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
-                    <div class="single-price-table">
-                        <div class="pricing-title">
-                            <i class="ti-medall-alt"></i>
-                            <h2>Standard</h2>
-                        </div>
-                        <div class="feature-price"></div>
-                        <div class="pricing-price">
-                            <h4><sup>$</sup>49<span>/ Monthly</span></h4>
-                        </div>
-                        <div class="pricing-body">
-                            <ul>
-                                <li><i class="ti-check"></i>Unlimited Man power</li>
-                                <li><i class="ti-check"></i>Free Advertisement</li>
-                                <li><i class="ti-check"></i>Advanced Options</li>
-                                <li class="cross"><i class="ti-close"></i>24/7 Support</li>
-                            </ul>
-                        </div>
-                        <a href="#" class="bttn-small btn-fill">Start now</a>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
-                    <div class="single-price-table">
-                        <div class="pricing-title">
-                            <i class="ti-crown"></i>
-                            <h2>Advanced</h2>
-                        </div>
-                        <div class="pricing-price">
-                            <h4><sup>$</sup>89<span>/ Monthly</span></h4>
-                        </div>
-                        <div class="pricing-body">
-                            <ul>
-                                <li><i class="ti-check"></i>Unlimited Man power</li>
-                                <li><i class="ti-check"></i>Free Advertisement</li>
-                                <li><i class="ti-check"></i>Advanced Options</li>
-                                <li><i class="ti-check"></i>24/7 Support</li>
-                            </ul>
-                        </div>
-                        <a href="#" class="bttn-small btn-fill">Start now</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> 
--->
-
-    <!-- /Pricing Section-->
-
-    <!-- Mobile App -->
-   <!-- <section class="section-padding-2 blue-bg">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-xl-8 col-lg-8 col-md-12 centered">
-                    <div class="section-title">
-                        <h4><span>New</span>Mobile app</h4>
-                        <h2>Get your Mobile now</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 mb-30">
-                    <div class="app-content">
-                        <div class="single-app-content">
-                            <h3>Use to pay bill</h3>
-                            <p>Necessitatibus iure eum temporibus quo expedita officiis, amet, distinctio accusantium tempora saepe</p>
-                        </div>
-                        <div class="single-app-content">
-                            <h3>Monitor live</h3>
-                            <p>Necessitatibus iure eum temporibus quo expedita officiis, amet, distinctio accusantium tempora saepe</p>
-                        </div>
-                        <div class="single-app-content">
-                            <h3>Instantly Transaction</h3>
-                            <p>Necessitatibus iure eum temporibus quo expedita officiis, amet, distinctio accusantium tempora saepe</p>
-                        </div>
-                        <div class="single-app-content">
-                            <h3>Reliability</h3>
-                            <p>Necessitatibus iure eum temporibus quo expedita officiis, amet, distinctio accusantium tempora saepe</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 mb-30">
-                    <div class="app-content">
-                        <div class="app-content-slider owl-carousel">
-                            <img class="middle-img" src="assets/images/mobile-4.png" alt="">
-                            <img class="middle-img" src="assets/images/mobile-5.png" alt="">
-                            <img class="middle-img" src="assets/images/mobile-2.png" alt="">
-                            <img class="middle-img" src="assets/images/mobile-3.png" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 mb-30">
-                    <div class="app-content">
-                        <div class="single-app-content">
-                            <h3>Easy to manage</h3>
-                            <p>Necessitatibus iure eum temporibus quo expedita officiis, amet, distinctio accusantium tempora saepe</p>
-                        </div>
-                        <div class="single-app-content">
-                            <h3>See Statistics</h3>
-                            <p>Necessitatibus iure eum temporibus quo expedita officiis, amet, distinctio accusantium tempora saepe</p>
-                        </div>
-                        <div class="single-app-content">
-                            <h3>Use to pay bill</h3>
-                            <p>Necessitatibus iure eum temporibus quo expedita officiis, amet, distinctio accusantium tempora saepe</p>
-                        </div>
-                        <div class="single-app-content">
-                            <h3>Use to pay bill</h3>
-                            <p>Necessitatibus iure eum temporibus quo expedita officiis, amet, distinctio accusantium tempora saepe</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-     --> 
-    <!-- /Mobile App -->   
-    
-    <!-- Team Section -->
-<!--     <section class="section-padding blue-bg-2">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-12">
-                    <div class="section-title">
-                        <h4><span>new</span> Team</h4>
-                        <h2>Our Team</h2>
-                    </div>
-                </div>
-            </div>
-            <div id="team-carousel" class="team-carousel owl-carousel">
-                <div class="team-box">
-                    <img src="assets/images/team/1.jpg" alt="team">
-                    <div class="hover">
-                        <h4>Joy Burton</h4>
-                        <p>CEO and Founder</p>
-                        <ul class="team-social">
-                            <li><a href="#"><i class="fa fa-medium"></i></a></li>
-                            <li><a href="#"><i class="fa fa-github"></i></a></li>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="team-box">
-                    <img src="assets/images/team/2.jpg" alt="team">
-                    <div class="hover">
-                        <h4>Mega Rox</h4>
-                        <p>CTO</p>
-                        <ul class="team-social">
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                            <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="team-box">
-                    <img src="assets/images/team/3.jpg" alt="team">
-                    <div class="hover">
-                        <h4>Lever Jhon</h4>
-                        <p>Lead Engineer</p>
-                        <ul class="team-social">
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                            <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="team-box">
-                    <img src="assets/images/team/4.jpg" alt="team">
-                    <div class="hover">
-                        <h4>Naven Kaper</h4>
-                        <p>Support Engineer</p>
-                        <ul class="team-social">
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                            <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="team-box">
-                    <img src="assets/images/team/2.jpg" alt="team">
-                    <div class="hover">
-                        <h4>Royal Cott</h4>
-                        <p>Marketer</p>
-                        <ul class="team-social">
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                            <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
-    <!-- /Team Section -->
-    
-    <!-- Blog Section -->
-
- <!--    <section class="section-padding blue-bg"> -->
-       <!--  <div class="container"> -->
-           <!--  <div class="row">
-                <div class="col-xl-12 centered">
-                    <div class="section-title">
-                        <h4><span>new</span> Blog section</h4>
-                        <h2>Latest News</h2>
-                    </div>
-                </div>
-            </div> -->
-
-            <!-- News Carousel -->
-          <!--   <div class="news-carousel owl-carousel"> -->
-                <!-- News Block -->
-
-                <!-- <div class="news-block">
-                    <div class="inner-box">
-                        <ul class="info">
-                            <li class="day">14th <span>Oct</span></li>
-                            <li class="comments"><a href="#">10<span class="ti-comments"></span></a></li>
-                        </ul>
-                        <div class="content">
-                            <img src="assets/images/blog/1.jpg" alt="" />
-                            <div class="author">Category: <a href="#">Wallet</a> by <a href="blog-single.html">Paylo</a></div>
-                            <h3><a href="blog-single.html">Learn how to make Transaction</a></h3>
-                            <div class="text">There are many variations of passages of Lorem Ipsum available, but the majority have..</div>
-                            <div class="link-box"><a href="blog-single.html">Read More</a></div>
-                        </div>
-                    </div>
-                </div> -->
-
-                <!-- News Block -->
-            <!--     <div class="news-block">
-                    <div class="inner-box">
-                        <ul class="info">
-                            <li class="day">14th <span>Oct</span></li>
-                            <li class="comments"><a href="#">10<span class="ti-comments"></span></a></li>
-                        </ul>
-                        <div class="content">
-                            <img src="assets/images/blog/2.jpg" alt="" />
-                            <div class="author">Category: <a href="#">Wallet</a> by <a href="blog-single.html">Paylo</a></div>
-                            <h3><a href="blog-single.html">Making the Transaction free and secure</a></h3>
-                            <div class="text">There are many variations of passages of Lorem Ipsum available, but the majority have..</div>
-                            <div class="link-box"><a href="blog-single.html">Read More</a></div>
-                        </div>
-                    </div>
-                </div> -->
-
-                <!-- News Block -->
-                <!-- <div class="news-block">
-                    <div class="inner-box">
-                        <ul class="info">
-                            <li class="day">14th <span>Oct</span></li>
-                            <li class="comments"><a href="#">10<span class="ti-comments"></span></a></li>
-                        </ul>
-                        <div class="content">
-                            <img src="assets/images/blog/3.jpg" alt="" />
-                            <div class="author">Category: <a href="#">Wallet</a> by <a href="blog-single.html">Paylo</a></div>
-                            <h3><a href="blog-single.html">Your Transaction should perfect</a></h3>
-                            <div class="text">There are many variations of passages of Lorem Ipsum available, but the majority have..</div>
-                            <div class="link-box"><a href="blog-single.html">Read More</a></div>
-                        </div>
-                    </div>
-                </div> -->
-          <!--   </div>
-        </div>
-    </section> -->
-    <!-- /Blog Section -->
-
-    <!--Payments Area-->
-<!--     <section class="section-padding-3 blue-bg-2 dots-after">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-6 col-6">
-                    <div class="single-payments">
-                        <a href="#"><img src="assets/images/payments/1.png" alt=""></a>
-                    </div>
-                </div>
-                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-6 col-6">
-                    <div class="single-payments">
-                        <a href="#"><img src="assets/images/payments/2.png" alt=""></a>
-                    </div>
-                </div>
-                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-6 col-6">
-                    <div class="single-payments">
-                        <a href="#"><img src="assets/images/payments/3.png" alt=""></a>
-                    </div>
-                </div>
-                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-6 col-6">
-                    <div class="single-payments">
-                        <a href="#"><img src="assets/images/payments/4.png" alt=""></a>
-                    </div>
-                </div>
-                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-6 col-6">
-                    <div class="single-payments">
-                        <a href="#"><img src="assets/images/payments/5.png" alt=""></a>
-                    </div>
-                </div>
-                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-6 col-6">
-                    <div class="single-payments">
-                        <a href="#"><img src="assets/images/payments/6.png" alt=""></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <!--/Payments Area-->
-
-    <!--newslatter-->
-    <!-- <section class="section-padding blue-bg">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                    <div class="call-to-action centered">
-                        <div class="section-title">
-                            <h4><span>Top</span>Stay updated</h4>
-                        </div>
-                        <div class="row justify-content-center">
-                            <div class="col-xl-6 col-lg-6 col-sm-12">
-                                <div class="newslatter">
-                                    <form action="#">
-                                        <input type="email" placeholder="Email Address" required>
-                                        <button type="submit">Subscribe</button>
-                                    </form>
-                                    <div class="social">
-                                        <a href="#"><i class="fa fa-facebook"></i></a>
-                                        <a href="#"><i class="fa fa-instagram"></i></a>
-                                        <a href="#"><i class="fa fa-twitter"></i></a>
-                                        <a href="#"><i class="fa fa-pinterest"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <!--/newslatter-->
 
     <!--Footer Area-->
     <footer class="footer-area section-padding-2 blue-bg-2">

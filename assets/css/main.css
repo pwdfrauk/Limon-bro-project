@@ -1787,6 +1787,158 @@ Footer Area
     color: #28df99;
 }
 
+
+/*
+***************************************************
+Step progress bar input section
+***************************************************
+*/
+.step-progress-section {
+    background: /*#3B4E8E*/ /*#341f97*//* #54a0ff*/ /*#003754*/ #022C43;
+}
+.widget-steps > .step {
+  padding: 0;
+  position: relative;
+}
+.widget-steps > .step .step-name {
+  font-size: 16px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+.widget-steps > .step > .step-dot {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  display: block;
+  background: #fff;
+  border: 2px solid #28a745;
+  top: 45px;
+  left: 50%;
+  margin-top: -15px;
+  margin-left: -15px;
+  border-radius: 50%;
+}
+.widget-steps > .step > .step-dot:after {
+  width: 10px;
+  height: 10px;
+  border-radius: 50px;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+}
+.widget-steps > .step.complete > .step-dot {
+  background: #28a745;
+}
+.widget-steps > .step.complete > .step-dot:after {
+  content: '\f00c';
+  font-weight: 900;
+  color: #fff;
+  font-family: "Font Awesome 5 Free";
+  top: 3px;
+  left: 7px;
+}
+.widget-steps > .step.active > .step-dot:after {
+  background: #28a745;
+  content: '';
+}
+.widget-steps > .step > .progress {
+  position: relative;
+  background: #bbb;
+  border-radius: 0px;
+  height: 2px;
+  box-shadow: none;
+  margin: 18px 0;
+}
+.widget-steps > .step > .progress > .progress-bar {
+  width: 0px;
+  box-shadow: none;
+  background: #28a745;
+}
+.widget-steps > .step.complete > .progress > .progress-bar {
+  width: 100%;
+}
+.widget-steps > .step.active > .progress > .progress-bar {
+  width: 50%;
+}
+.widget-steps > .step:first-child.active > .progress > .progress-bar {
+  width: 0%;
+}
+.widget-steps > .step:last-child.active > .progress > .progress-bar {
+  width: 100%;
+}
+.widget-steps > .step.disabled > .step-dot {
+  border-color: #bbb;
+}
+.widget-steps > .step:first-child > .progress {
+  left: 50%;
+  width: 50%;
+}
+.widget-steps > .step:last-child > .progress {
+  width: 50%;
+}
+.widget-steps > .step.disabled a.step-dot {
+  pointer-events: none;
+}
+
+@media (max-width: 575.98px) {
+  .widget-steps > .step .step-name {
+    font-size: 14px;
+  }
+}
+/* Demo banner */
+.demos-banner {
+  background-repeat: repeat;
+  background-size: cover;
+  height: 880px;
+  background-position: 0px 0px;
+  animation: move 30s linear infinite;
+  -moz-animation: move 30s linear infinite;
+  -webkit-animation: move 30s linear infinite;
+  -ms-animation: move 30s linear infinite;
+  -o-animation: move 30s linear infinite;
+}
+
+@keyframes move {
+  0% {
+    background-position: 0px 0px;
+  }
+  100% {
+    background-position: -2324px 0px;
+  }
+}
+@-moz-keyframes move {
+  0% {
+    background-position: 0px 0px;
+  }
+  100% {
+    background-position: -2324px 0px;
+  }
+}
+@-webkit-keyframes move {
+  0% {
+    background-position: 0px 0px;
+  }
+  100% {
+    background-position: -2324px 0px;
+  }
+}
+@-ms-keyframes move {
+  0% {
+    background-position: 0px 0px;
+  }
+  100% {
+    background-position: -2324px 0px;
+  }
+}
+@-o-keyframes move {
+  0% {
+    background-position: 0px 0px;
+  }
+  100% {
+    background-position: -2324px 0px;
+  }
+}
+
 /*
 
 ===============================
@@ -2184,8 +2336,7 @@ process and pendaing section
 
 */
 .processing-section {
-   background: rgb(3,11,55);
-   background: linear-gradient(1deg, rgba(3,11,55,1) 0%, rgba(248,225,67,1) 100%);
+   background: #003754;
 }
 .faruk-section-title h2 {
     color:#0714d9;;
@@ -2223,8 +2374,7 @@ complated  section
 
 */
 .completed-section {
-   background: rgb(16,60,238);
-   background: linear-gradient(0deg, rgba(16,60,238,1) 37%, rgba(19,190,233,1) 65%);
+   background: #022C43;
 }
 
 /* gradient progress bar css */
@@ -2233,6 +2383,10 @@ complated  section
 /* π = 3.1415926535898 */
 /* r = 35 */
 
+/* complate-progress-section"*/
+.complate-progress-section {
+    background: #2F4468;
+}
 svg.radial-progress {
   height: auto;
   max-width: 200px;
@@ -2263,7 +2417,7 @@ svg.radial-progress circle.incomplete { opacity: 0.25; }
 svg.radial-progress circle.complete { stroke-dasharray: 219.91148575129; /* Circumference */ }
 
 svg.radial-progress text {
-  fill: #000;
+  fill: #fff;
   font: 400 1em/1 'Oswald', sans-serif;
   text-anchor: middle;
 }
@@ -2277,7 +2431,9 @@ reserved  section
 ===============================
 
 */
-.reserve-section {}
+.reserve-section {
+    background: /*#F0F3F5*/ /*#48dbfb*/ #92C4C3;
+}
 .reserve-section .faruk-section-title h2::after {
     width: 180px;
 }
